@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.habit {
+    position: absolute;
+    height: 85.45%;
+    width: 99.9%;
+    /* border: 1px solid red; */
+    background: url("https://news.harvard.edu/wp-content/uploads/2018/04/healthy-habits.jpg");
+    opacity: 0.8;
+    background-size: cover;
+}
+
+.modal {
+    position: absolute;
+    height: fit-content;
+    width: 30%;
+    border: 1px solid blue;
+    padding: 20px;
+    left: 30%;
+    top: 10%;
+    text-align: center;
+    background-color: rgb(155, 252, 252);
+    border-radius: 20px 20px;
+
+}
+
+input {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    outline-color: blueviolet;
+    
+    
+
+}
+
+button {
+   margin-top: 20px;
+   margin-right: 30px;
+   width: 70px;
+   height: 40px;
+   color: aliceblue;
+   cursor: pointer;
+}
+.btnSuccess{
+    background-color: green;
+}
+.btnDanger{
+    background-color: red;
+}

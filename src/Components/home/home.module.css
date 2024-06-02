@@ -1,0 +1,56 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://news.harvard.edu/wp-content/uploads/2018/04/healthy-habits.jpg");
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.home {
+    position: absolute;
+    height: fit-content;
+    width: 99.9%;
+    /* border: 1px solid red; */
+    /* background: url("https://news.harvard.edu/wp-content/uploads/2018/04/healthy-habits.jpg"); */
+    opacity: 0.8;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.habitCard {
+    height: 15%;
+    width: 90%;
+    background-color: wheat;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.habitCard div {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.btn{
+    height: 70px;
+    width: 70px;
+
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+}
