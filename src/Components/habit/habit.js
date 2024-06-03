@@ -11,9 +11,9 @@ export default function Habit() {
     count: 0,
     date: null,
     yesClicked: [],
-    
   });
   const [habitAdded, setHabitAdded] = useState(false);
+  const [nextId, setNextId] = useState(1); // Initialize the next ID
   const dispatch = useDispatch();
   const habits = useSelector(Habits);
 
@@ -24,12 +24,13 @@ export default function Habit() {
   const handleAddHabit = () => {
     const habitWithTimestamp = {
       ...habit,
+      id: nextId, // Use the next ID
       date: new Date().toISOString(),
     };
     dispatch(addHabit(habitWithTimestamp));
+    setNextId(nextId + 1); // Increment the next ID
     setHabit({
       ...habit,
-      id: habit.id + 1, // Ensure id is incremented
       name: "",
       count: 0,
       date: null,

@@ -12,6 +12,7 @@ import { useState } from "react";
 export default function Week() {
   const dispatch = useDispatch();
   const id = useParams().id;
+  console.log(id);
   const habits = useSelector(Habits);
   const habit = habits.find((i) => id == i.id);
 
@@ -97,7 +98,10 @@ export default function Week() {
                 />
               </>
             ) : (
-              <p>You can't set<br /> beyond today</p>
+              <p>
+                You can't set
+                <br /> beyond today
+              </p>
             )}
           </div>
         ))}
